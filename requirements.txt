@@ -1,0 +1,8 @@
+flask
+flask-cors
+openai
+whisper
+numpy
+torch
+requests
+elevenlabs
