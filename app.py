@@ -6,7 +6,7 @@ from flask_cors import CORS
 import time
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="*", supports_credentials=True)  # Permite CORS a todos (modo abierto)
 
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 ELEVEN_API_KEY = os.getenv("ELEVENLABS_API_KEY")
