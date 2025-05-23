@@ -215,7 +215,7 @@ async function sendMessage(messageText, isVoiceMessage = false) {
         showLoading(); // Mostrar un loader mientras se procesa la solicitud
   
         // Aquí la URL correcta (local)
-        const url = 'http://127.0.0.1:5000/send-message';
+        const url = 'https://shoppingbot-production.up.railway.app/send-message';
   
         const response = await fetch(url, {
           method: 'POST',
